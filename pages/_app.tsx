@@ -11,16 +11,16 @@ export default function App({ Component, pageProps }: AppProps) {
     <AnimatePresence exitBeforeEnter>
       <Suspense fallback={null}>
         <Layout>
-          <motion.div
-            style={{ display: 'contents' }}
-            initial="initial"
-            exit="exit"
-            animate="enter"
-          >
-            <AnimateSharedLayout>
+          <AnimateSharedLayout>
+            <motion.div
+              style={{ display: 'contents' }}
+              initial="initial"
+              exit="exit"
+              animate="enter"
+            >
               <Component {...pageProps} />
-            </AnimateSharedLayout>
-          </motion.div>
+            </motion.div>
+          </AnimateSharedLayout>
         </Layout>
       </Suspense>
     </AnimatePresence>
