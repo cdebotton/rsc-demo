@@ -1,0 +1,19 @@
+.container {
+  composes: h4 from './Heading.module.css';
+  display: inline-grid;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 0.8;
+  padding: 1rem;
+  background-color: hsl(var(--fgColor));
+  color: hsl(var(--bgColor));
+  border-radius: 4px;
+}
+
+.firstName {
+  letter-spacing: -0.04em;
+}
+
+.lastName {
+  letter-spacing: -0.05em;
+}
